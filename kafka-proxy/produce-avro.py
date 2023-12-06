@@ -36,7 +36,7 @@ def produce():
         "records": [{"value": asdict(ClickEvent())}]
     }
     resp = requests.post(
-        f"{REST_PROXY_URL}/topics/helo.mali.connect.log.file.logs",
+        f"{REST_PROXY_URL}/topics/helo.mali.avro.clicks",
         data=json.dumps(data),
         headers=headers,
     )
